@@ -7,46 +7,46 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Hoje é dia de levar seu pet ao petshop, você prefere ir de manhã ou a tarde?",
+        enunciado: "vamos jogar basquete?",
         alternativas: [
             {
-                texto: "manhã!",
-                afirmacao: "levou seu pet de manhã."
+                texto: "sim",
+                afirmacao: "foi jogar basquete."
             },
             {
-                texto: "tarde!",
-                afirmacao: "levou seu pet à tarde."
+                texto: "não",
+                afirmacao: "não foi jogar basquete."
             }
         ]
     },
     {
-        enunciado: "Qual banho você prefere? banho e tosa tradicional ou apenas higiênico?",
+        enunciado: "prefere jogar de manhã ou de tarde?",
         alternativas: [
             {
-                texto: "tradicional",
-                afirmacao: "ele recebeu uma tosa tradicional."
+                texto: "manhã",
+                afirmacao: "foram jogar de manhã"
             },
             {
-                texto: "apenas higiênico",
-                afirmacao: "ele recebeu uma tosa higiênica."
+                texto: "tarde",
+                afirmacao: "foram jogar de tarde"
             }
         ]
     },
     {
-        enunciado: "Deseja algum acessório?",
+        enunciado: "você prefere jogar com bola oficial ou bola normal",
         alternativas: [
             {
-                texto: "sim, obrigado!",
-                afirmacao: "recebeu lacinhos."
+                texto: "bola oficial",
+                afirmacao: "apenas jogar com bola oficial"
             },
             {
-                texto: "não, obrigado!",
-                afirmacao: "voltou sem nenhum acessório."
+                texto: "bola normal",
+                afirmacao: "apenas jogar com bola normal"
             }
         ]
     },
     {
-        enunciado: "Ao final do procedimento podemos tirar foto?",
+        enunciado: "Ao final do jogo podemos tirar foto?",
         alternativas: [
             {
                 texto: "simm!",
@@ -93,7 +93,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "No final da tosa:"; // Texto final ajustado
+    caixaPerguntas.textContent = "No final da partida"; // Texto final ajustado
     textoResultado.textContent = historiaFinal.trim(); // Mostrar a história final completa
     caixaAlternativas.textContent = ""; // Limpar alternativas
 }
